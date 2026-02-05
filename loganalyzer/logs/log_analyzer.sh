@@ -8,14 +8,23 @@
 # Date:05/02/2026
 ################################################################################
 
-# Finding files that were updated in the last 24 hours
+echo "###   Analysing logs   ###"
+echo "=========================="
 
+echo -e "\n### List of log files updated in the last 24 hours. ###"
 find . -name "*.log" -mtime -1
 
+echo -e "\n### Searching ERROR logs in application logs. ###"
 grep "ERROR" application.log
-grep -c "ERROR" application.log
-grep -c "FATAL" application.log
 
+echo -e "\n### Number of errors found in application logs. ###"
+grep -c "ERROR" application.log
+
+echo -e "\n### The last error in application logs. ###"
+grep -c "FATAL" application.log | tail -1
+
+echo -e "\n### The FATAL errors from system logs. ###"
 grep "FATAL" system.log
-grep -c "CRITICAL" system.log
-grep -c "CRITICAL" system.log
+
+echo -e "\n### Number of FATAL errors in the system log. ###"
+grep -c "FATAL" system.log

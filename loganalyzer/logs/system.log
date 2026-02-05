@@ -1,0 +1,110 @@
+﻿Jun  1 00:00:01 server-prod-01 systemd[1]: Started Daily rotation of log files.
+Jun  1 00:00:14 server-prod-01 CRON[23145]: (root) CMD (/usr/lib/systemd/system-sleep)
+Jun  1 00:05:01 server-prod-01 CRON[23147]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun  1 00:10:37 server-prod-01 kernel: [42768.463290] CPU3: Core temperature above threshold, cpu clock throttled (total events = 1)
+Jun  1 00:10:37 server-prod-01 kernel: [42768.463292] CPU1: Core temperature above threshold, cpu clock throttled (total events = 1)
+Jun  1 00:10:37 server-prod-01 thermald[1208]: [WARNING] sysfs write failed trip_point_0_temp
+Jun  1 00:12:03 server-prod-01 kernel: [42854.789245] CPU1: Core temperature/speed normal
+Jun  1 00:12:03 server-prod-01 kernel: [42854.789247] CPU3: Core temperature/speed normal
+Jun  1 00:17:01 server-prod-01 CRON[23201]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun  1 00:30:01 server-prod-01 CRON[23254]: (root) CMD ([ -x /etc/init.d/anacron ] && /usr/sbin/invoke-rc.d anacron start >/dev/null)
+Jun  1 01:00:01 server-prod-01 CRON[23423]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun  1 01:05:03 server-prod-01 dhclient[1234]: DHCPREQUEST for 192.168.1.100 on eth0 to 192.168.1.1 port 67
+Jun  1 01:05:03 server-prod-01 dhclient[1234]: DHCPACK from 192.168.1.1
+Jun  1 01:05:03 server-prod-01 dhclient[1234]: bound to 192.168.1.100 -- renewal in 3300 seconds.
+Jun  1 01:17:01 server-prod-01 CRON[23897]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun  1 01:20:15 server-prod-01 kernel: [47146.321890] [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:cc:dd SRC=198.51.100.23 DST=192.168.1.100 LEN=40 TOS=0x00 PREC=0x00 TTL=245 ID=54321 PROTO=TCP SPT=63122 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0
+Jun  1 01:20:16 server-prod-01 kernel: [47147.456780] [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:cc:dd SRC=198.51.100.23 DST=192.168.1.100 LEN=40 TOS=0x00 PREC=0x00 TTL=245 ID=54322 PROTO=TCP SPT=63122 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0
+Jun  1 01:20:17 server-prod-01 kernel: [47148.589670] [UFW BLOCK] IN=eth0 OUT= MAC=00:11:22:33:44:55:66:77:88:99:aa:bb:cc:dd SRC=198.51.100.23 DST=192.168.1.100 LEN=40 TOS=0x00 PREC=0x00 TTL=245 ID=54323 PROTO=TCP SPT=63122 DPT=22 WINDOW=65535 RES=0x00 SYN URGP=0
+Jun  1 01:20:18 server-prod-01 sshd[23954]: [ERROR] Failed password for root from 198.51.100.23 port 63122 ssh2
+Jun  1 01:20:19 server-prod-01 sshd[23954]: [ERROR] Failed password for root from 198.51.100.23 port 63122 ssh2
+Jun  1 01:20:20 server-prod-01 sshd[23954]: [ERROR] Failed password for root from 198.51.100.23 port 63122 ssh2
+Jun  1 01:20:21 server-prod-01 sshd[23954]: [CRITICAL] Disconnecting: Too many authentication failures for root from 198.51.100.23 port 63122 ssh2 [preauth]
+Jun  1 01:20:21 server-prod-01 sshd[23954]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.23  user=root
+Jun  1 01:25:01 server-prod-01 sudo[24032]: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt update
+Jun  1 01:25:07 server-prod-01 sudo[24032]: pam_unix(sudo:session): session opened for user root by admin(uid=1000)
+Jun  1 01:25:15 server-prod-01 apt[24033]: Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Jun  1 01:25:20 server-prod-01 apt[24033]: Get:2 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Jun  1 01:25:30 server-prod-01 apt[24033]: Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Jun  1 01:26:01 server-prod-01 apt[24033]: Reading package lists...
+Jun  1 01:26:05 server-prod-01 sudo[24032]: pam_unix(sudo:session): session closed for user root
+Jun  1 01:30:01 server-prod-01 sudo[24095]: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt upgrade -y
+Jun  1 01:30:07 server-prod-01 sudo[24095]: pam_unix(sudo:session): session opened for user root by admin(uid=1000)
+Jun  1 01:30:15 server-prod-01 apt[24096]: Reading package lists...
+Jun  1 01:30:20 server-prod-01 apt[24096]: Building dependency tree...
+Jun  1 01:30:25 server-prod-01 apt[24096]: Reading state information...
+Jun  1 01:30:30 server-prod-01 apt[24096]: Calculating upgrade...
+Jun  1 01:30:45 server-prod-01 apt[24096]: The following packages will be upgraded: libssl1.1 openssl
+Jun  1 01:30:45 server-prod-01 apt[24096]: 2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Jun  1 01:30:46 server-prod-01 apt[24096]: Need to get 2,600 kB of archives.
+Jun  1 01:30:46 server-prod-01 apt[24096]: After this operation, 8,192 B of additional disk space will be used.
+Jun  1 01:30:47 server-prod-01 apt[24096]: Get:1 http://security.ubuntu.com/ubuntu focal-security/main amd64 libssl1.1 amd64 1.1.1f-1ubuntu2.20 [1,321 kB]
+Jun  1 01:30:52 server-prod-01 apt[24096]: Get:2 http://security.ubuntu.com/ubuntu focal-security/main amd64 openssl amd64 1.1.1f-1ubuntu2.20 [621 kB]
+Jun  1 01:31:10 server-prod-01 apt[24096]: Preparing to unpack .../libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb ...
+Jun  1 01:31:11 server-prod-01 apt[24096]: Unpacking libssl1.1:amd64 (1.1.1f-1ubuntu2.20) over (1.1.1f-1ubuntu2.19) ...
+Jun  1 01:31:15 server-prod-01 apt[24096]: Setting up libssl1.1:amd64 (1.1.1f-1ubuntu2.20) ...
+Jun  1 01:31:16 server-prod-01 apt[24096]: Preparing to unpack .../openssl_1.1.1f-1ubuntu2.20_amd64.deb ...
+Jun  1 01:31:17 server-prod-01 apt[24096]: Unpacking openssl (1.1.1f-1ubuntu2.20) over (1.1.1f-1ubuntu2.19) ...
+Jun  1 01:31:20 server-prod-01 apt[24096]: Setting up openssl (1.1.1f-1ubuntu2.20) ...
+Jun  1 01:31:25 server-prod-01 apt[24096]: Processing triggers for man-db (2.9.1-1) ...
+Jun  1 01:31:30 server-prod-01 apt[24096]: Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
+Jun  1 01:31:45 server-prod-01 sudo[24095]: pam_unix(sudo:session): session closed for user root
+Jun  1 01:45:01 server-prod-01 kernel: [49411.123456] [FATAL] EXT4-fs error (device sda1): ext4_journal_check_start:56: Detected aborted journal
+Jun  1 01:45:02 server-prod-01 kernel: [49412.234567] [FATAL] EXT4-fs (sda1): Remounting filesystem read-only
+Jun  1 01:45:03 server-prod-01 kernel: [49413.345678] [ERROR] JBD2: Detected IO errors while flushing file data on sda1-8
+Jun  1 01:45:04 server-prod-01 kernel: [49414.456789] [ERROR] Buffer I/O error on device sda1, logical block 12345678
+Jun  1 01:45:05 server-prod-01 smartd[1234]: Device: /dev/sda [SAT], SMART Failure: ATTRIBUTE 5 C5 196
+Jun  1 01:45:06 server-prod-01 smartd[1234]: [CRITICAL] Device: /dev/sda [SAT], failed SMART usage Attribute: Reallocated_Sector_Ct.
+Jun  1 01:45:07 server-prod-01 smartd[1234]: [WARNING] Device: /dev/sda [SAT], 65 Currently unreadable (pending) sectors
+Jun  1 01:50:22 server-prod-01 kernel: [49732.987654] [EXCEPTION] XFS (sdb1): xfs_do_force_shutdown(0x2) called from line 1205 of file /build/linux-aws-KFqm0w/linux-aws-5.4.0/fs/xfs/xfs_trans.c. Return address: 0xffffffffc036cf21
+Jun  1 01:50:23 server-prod-01 kernel: [49733.098765] [EXCEPTION] XFS (sdb1): Log I/O Error Detected. Shutting down filesystem
+Jun  1 01:50:24 server-prod-01 kernel: [49734.109876] [ERROR] XFS (sdb1): Please unmount the filesystem and rectify the problem(s)
+Jun  1 02:00:01 server-prod-01 CRON[24234]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun  1 02:15:14 server-prod-01 systemd[1]: Starting Daily apt upgrade and clean activities...
+Jun  1 02:15:15 server-prod-01 systemd[1]: apt-daily-upgrade.service: Main process exited, code=exited, status=1/FAILURE
+Jun  1 02:15:15 server-prod-01 systemd[1]: apt-daily-upgrade.service: Failed with result 'exit-code'.
+Jun  1 02:15:15 server-prod-01 systemd[1]: [ERROR] Failed to start Daily apt upgrade and clean activities.
+Jun  1 02:17:01 server-prod-01 CRON[24401]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun  1 02:30:01 server-prod-01 CRON[24502]: (root) CMD ([ -x /etc/init.d/anacron ] && /usr/sbin/invoke-rc.d anacron start >/dev/null)
+Jun  1 03:00:01 server-prod-01 CRON[24732]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun  1 03:12:45 server-prod-01 systemd-logind[842]: [WARNING] New session 15 of user admin.
+Jun  1 03:12:45 server-prod-01 systemd: pam_unix(systemd-user:session): session opened for user admin by (uid=0)
+Jun  1 03:12:46 server-prod-01 systemd-logind[842]: New session 15 of user admin.
+Jun  1 03:12:47 server-prod-01 sshd[24899]: Accepted publickey for admin from 203.0.113.42 port 56789 ssh2: RSA SHA256:AbCdEfGhIjKlMnOpQrStUvWxYz1234567890ABCDEFG
+Jun  1 03:15:01 server-prod-01 mdadm[24920]: [WARNING] RebuildStarted event detected on md device /dev/md0
+Jun  1 03:15:02 server-prod-01 mdadm[24920]: Rebuild started for /dev/md0 (device 2)
+Jun  1 03:17:01 server-prod-01 CRON[24954]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun  1 03:30:01 server-prod-01 CRON[25023]: (root) CMD ([ -x /etc/init.d/anacron ] && /usr/sbin/invoke-rc.d anacron start >/dev/null)
+Jun  1 03:45:23 server-prod-01 mdadm[25134]: [ERROR] RebuildFinished event detected on md device /dev/md0, but rebuild failed
+Jun  1 03:45:24 server-prod-01 mdadm[25134]: Rebuild failed for /dev/md0
+Jun  1 03:45:25 server-prod-01 kernel: [56725.567890] md/raid1:md0: [ERROR] sdc1: rescheduling sector 7654321 for read
+Jun  1 03:45:26 server-prod-01 kernel: [56726.678901] md/raid1:md0: [ERROR] sdc1: read error at offset 7654321 on device sdc1
+Jun  1 03:46:01 server-prod-01 smartd[1234]: [CRITICAL] Device: /dev/sdc [SAT], failed SMART usage Attribute: Raw_Read_Error_Rate.
+Jun  1 04:00:01 server-prod-01 CRON[25245]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun  1 04:05:01 server-prod-01 CRON[25345]: (root) CMD (systemctl restart ntp)
+Jun  1 04:05:02 server-prod-01 systemd[1]: Stopping Network Time Service...
+Jun  1 04:05:03 server-prod-01 systemd[1]: ntp.service: Succeeded.
+Jun  1 04:05:03 server-prod-01 systemd[1]: Stopped Network Time Service.
+Jun  1 04:05:04 server-prod-01 systemd[1]: Starting Network Time Service...
+Jun  1 04:05:05 server-prod-01 ntpd[25349]: ntpd 4.2.8p12@1.3728 (1): Starting
+Jun  1 04:05:05 server-prod-01 ntpd[25349]: Command line: /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 112:119
+Jun  1 04:05:05 server-prod-01 systemd[1]: Started Network Time Service.
+Jun  1 04:17:01 server-prod-01 CRON[25401]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun  1 04:30:01 server-prod-01 CRON[25502]: (root) CMD ([ -x /etc/init.d/anacron ] && /usr/sbin/invoke-rc.d anacron start >/dev/null)
+Jun  1 04:40:12 server-prod-01 kernel: [59412.345678] [ERROR] Memory failure: 0x00000000aa2b5000: recovery action unavailable
+Jun  1 04:40:13 server-prod-01 kernel: [59413.456789] [ERROR] EDAC MC0: 1 CE memory read error on CPU_SrcID#0_MC#0_Chan#0_DIMM#0 (channel:0 slot:0 page:0x0 offset:0x0 grain:8 syndrome:0x0 - area:DRAM err_code:0001:0091 socket:0 channel_mask:1)
+Jun  1 04:40:14 server-prod-01 kernel: [59414.567890] [CRITICAL] Hardware event. This is not a software error.
+Jun  1 04:40:15 server-prod-01 kernel: [59415.678901] [CRITICAL] MCE: [Hardware Error]: CPU 0: Machine Check: 0 Bank 6: ee00000000800400
+Jun  1 04:40:16 server-prod-01 kernel: [59416.789012] [ERROR] EDAC MC0: 1 CE memory read error on CPU_SrcID#0_MC#0_Chan#0_DIMM#0 (channel:0 slot:0 page:0x0 offset:0x0 grain:8 syndrome:0x0 - area:DRAM err_code:0001:0091 socket:0 channel_mask:1)
+Jun  1 05:00:01 server-prod-01 CRON[25734]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun  1 05:17:01 server-prod-01 CRON[25889]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jun  1 05:30:01 server-prod-01 CRON[25934]: (root) CMD ([ -x /etc/init.d/anacron ] && /usr/sbin/invoke-rc.d anacron start >/dev/null)
+Jun  1 05:45:12 server-prod-01 kernel: [63912.234567] [EXCEPTION] BUG: unable to handle kernel NULL pointer dereference at 0000000000000000
+Jun  1 05:45:13 server-prod-01 kernel: [63913.345678] [EXCEPTION] IP: kvm_arch_vcpu_ioctl_run+0x5e3/0x7d0 [kvm]
+Jun  1 05:45:14 server-prod-01 kernel: [63914.456789] [EXCEPTION] PGD 0 P4D 0
+Jun  1 05:45:15 server-prod-01 kernel: [63915.567890] Oops: 0002 [#1] SMP PTI
+Jun  1 05:45:16 server-prod-01 kernel: [63916.678901] Modules linked in: kvm_intel kvm irqbypass
+Jun  1 05:45:17 server-prod-01 kernel: [63917.789012] CPU: 2 PID: 26012 Comm: qemu-system-x86 Not tainted 5.4.0-125-generic #141-Ubuntu
+Jun  1 05:45:20 server-prod-01 kernel: [63920.123456] RIP: 0010:kvm_arch_vcpu_ioctl_run+0x5e3/0x7d0 [kvm]
+Jun  1 05:45:25 server-prod-01 systemd[1]: [WARNING] qemu-kvm.service entered failed state.
+Jun  1 06:00:01 server-prod-01 CRON[26134]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)

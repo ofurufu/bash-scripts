@@ -29,6 +29,6 @@ for LOG_FILE in $LOG_FILES; do
         grep    "$PATTERN" "$LOG_FILE"
 
         echo -e "\nNumber of $ERROR_PATTERN logs found in $LOG_FILE"
-        grep -c "$PATTERNS" "$LOG_FILE"
+        grep -c "$PATTERN" "$LOG_FILE"
     done
 done

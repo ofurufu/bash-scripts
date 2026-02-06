@@ -20,7 +20,8 @@ echo "###   Analysing logs   ###"
 echo "=========================="
 
 echo -e "\nList of log files updated in the last 24 hours."
-find  $LOG_DIR -name "*.log" -mtime -1
+LOG_FILES=$(find  $LOG_DIR -name "*.log" -mtime -1)
+echo $LOG_FILES
 
 echo -e "\nSearching ERROR logs in application.log file."
 grep -c "${ERROR_PATTERNS[0]}" "$LOG_DIR/$APP_LOG_FILE"

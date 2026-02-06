@@ -7,7 +7,7 @@
 [2025-06-01 08:17:45] [INFO] Payment processing started for order #12345
 [2025-06-01 08:17:48] [ERROR] Payment gateway timeout after 30s for transaction TX78901234
 [2025-06-01 08:17:49] [INFO] Retrying payment for order #12345
-[2025-06-01 08:18:01] [INFO] Payment successful for order #12345
+[2025-06-01 08:18:01] [INFO] Payment successful for order #1234
 [2025-06-01 08:22:14] [INFO] User jane.smith logged in successfully
 [2025-06-01 08:23:59] [WARNING] High CPU usage detected: 87%
 [2025-06-01 08:25:33] [INFO] File upload started: annual_report.pdf (15.7 MB)

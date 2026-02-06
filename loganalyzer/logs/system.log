@@ -107,4 +107,4 @@ Jun  1 05:45:16 server-prod-01 kernel: [63916.678901] Modules linked in: kvm_int
 Jun  1 05:45:17 server-prod-01 kernel: [63917.789012] CPU: 2 PID: 26012 Comm: qemu-system-x86 Not tainted 5.4.0-125-generic #141-Ubuntu
 Jun  1 05:45:20 server-prod-01 kernel: [63920.123456] RIP: 0010:kvm_arch_vcpu_ioctl_run+0x5e3/0x7d0 [kvm]
 Jun  1 05:45:25 server-prod-01 systemd[1]: [WARNING] qemu-kvm.service entered failed state.
-Jun  1 06:00:01 server-prod-01 CRON[26134]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun  1 06:00:01 server-prod-01 CRON[26134]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 

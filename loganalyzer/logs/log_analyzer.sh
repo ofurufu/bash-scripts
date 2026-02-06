@@ -8,23 +8,27 @@
 # Date:05/02/2026
 ################################################################################
 
+# Variable Definition
+LOG_DIR="/mnt/c/Users/ME/bash-scripts/loganalyzer/logs"
+APP_LOG_FILE="application.log"
+SYS_LOG_FILE="system.log"
+
 echo "###   Analysing logs   ###"
 echo "=========================="
 
 echo -e "\nList of log files updated in the last 24 hours."
-find /mnt/c/Users/ME/bash-scripts/loganalyzer/logs -name "*.log" -mtime -1
+find  $LOG_DIR -name "*.log" -mtime -1
 
 echo -e "\nSearching ERROR logs in application logs."
-grep "ERROR" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/application.log
+grep "ERROR" "$LOG_DIR/$APP_LOG_FILE"
 
 echo -e "\nNumber of errors found in application logs."
-grep -c "ERROR" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/application.log
-
+grep -c "ERROR" "$LOG_DIR/$APP_LOG_FILE
 echo -e "\nThe last error in application logs."
-grep -c "FATAL" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/application.log | tail -1
+grep -c "FATAL" "$LOG_DIR/$APP_LOG_FILE" | tail -1
 
 echo -e "\nThe FATAL errors from system logs."
-grep "FATAL" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/system.log
+grep "FATAL" "$LOG_DIR/$SYS_LOG_FILE"
 
 echo -e "\nNumber of FATAL errors in the system log."
-grep -c "FATAL" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/system.log
+grep -c "FATAL" "$LOG_DIR/$SYS_LOG_FILE"

@@ -11,20 +11,20 @@
 echo "###   Analysing logs   ###"
 echo "=========================="
 
-echo -e "\n### List of log files updated in the last 24 hours. ###"
-find . -name "*.log" -mtime -1
+echo -e "\nList of log files updated in the last 24 hours."
+find /mnt/c/Users/ME/bash-scripts/loganalyzer/logs -name "*.log" -mtime -1
 
-echo -e "\n### Searching ERROR logs in application logs. ###"
-grep "ERROR" application.log
+echo -e "\nSearching ERROR logs in application logs."
+grep "ERROR" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/application.log
 
-echo -e "\n### Number of errors found in application logs. ###"
-grep -c "ERROR" application.log
+echo -e "\nNumber of errors found in application logs."
+grep -c "ERROR" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/application.log
 
-echo -e "\n### The last error in application logs. ###"
-grep -c "FATAL" application.log | tail -1
+echo -e "\nThe last error in application logs."
+grep -c "FATAL" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/application.log | tail -1
 
-echo -e "\n### The FATAL errors from system logs. ###"
-grep "FATAL" system.log
+echo -e "\nThe FATAL errors from system logs."
+grep "FATAL" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/system.log
 
-echo -e "\n### Number of FATAL errors in the system log. ###"
-grep -c "FATAL" system.log
+echo -e "\nNumber of FATAL errors in the system log."
+grep -c "FATAL" /mnt/c/Users/ME/bash-scripts/loganalyzer/logs/system.log

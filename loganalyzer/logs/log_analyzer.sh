@@ -22,6 +22,10 @@ LOG_FILES=$(find  $LOG_DIR -name "*.log" -mtime -1)
 echo "$LOG_FILES"
 
 for LOG_FILE in $LOG_FILES; do
+    echo -e "\n"
+    echo "================================================"
+    echo "=============$LOG_FILES========================="
+    echo "================================================"
 
     for PATTERN in ${ERROR_PATTERNS[@]}; do
 

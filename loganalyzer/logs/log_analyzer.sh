@@ -34,7 +34,13 @@ for LOG_FILE in $LOG_FILES; do
         grep    "$PATTERN" "$LOG_FILE" >> "$REPORT_FILE"
 
         echo -e "\nNumber of $ERROR_PATTERN logs found in $LOG_FILE" >> "$REPORT_FILE"
-        grep -c "$PATTERN" "$LOG_FILE" >> "$REPORT_FILE"
+        
+        ERROR_COUNT=$(grep -c "$PATTERN" "$LOG_FILE")
+        echo $ERROR_COUNT >> "$REPORT_FILE"
+
+        if [ $ERROR_COUNT  -gt 10 ]; then
+            echo "⚠ Action required: To many $PATTERN issues in log file."
+        fi 
     done
 done
 
